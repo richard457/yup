@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="StrimUp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.scss" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>yup</title>
+    </head>
+    <body ng-controller="mainController">
+        
+           <header class="button">
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Yup</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="glyphicon glyphicon-th"></i> About</a></li>
+                    <li><a href="#contact"><i class="glyphicon glyphicon-comment"></i> Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+            
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div ng-view></div> <!--to tell that this will render our view-->
+
+        </div>
+        <script src="js/ajax.js"></script>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" src="js/index.js"></script>
+         <script src="js/angular.min.js"></script>
+        <script src="js/angular-ui-bootstrap-modal.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/AppControl.js"></script>
+        <script src="js/Register.js"></script>
+        
+    </body>
+</html>
